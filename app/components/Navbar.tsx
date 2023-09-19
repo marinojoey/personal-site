@@ -1,19 +1,5 @@
 import Link from 'next/link'
 import React, { FC } from 'react'
-import MountainIcon from '../assets/icons/MountainIcon'
-
-const headerStyle = {
-  fontSize: '2em',
-  fontWeight: 'bold',
-  margin: 0,
-  padding: 0,
-}
-
-const divStyle = {
-  display: 'flex',
-  alignItems: 'center',
-  gap: '.3rem',
-}
 
 interface NavBarProps {
   // TODO: define props here
@@ -21,13 +7,26 @@ interface NavBarProps {
 
 const NavBar: FC<NavBarProps> = () => {
   return (
-    <nav>
-      <div style={divStyle}>
-        <MountainIcon width={60} />
-        <h1 style={headerStyle}>Joey Marino</h1>
+    <nav className="navbar">
+      <div className="linkGroup">
+        <Link href="/resume" className="navLink">
+          Resume
+        </Link>
+        <Link href="/portfolio" className="navLink">
+          Portfolio
+        </Link>
       </div>
-      <Link href="/">Home</Link>
-      <Link href="/blog">Blog</Link>
+      <Link href="/" className="navLink mainTitle">
+        Joey Marino
+      </Link>
+      <div className="linkGroup">
+        <Link href="/climbing" className="navLink">
+          Climbing
+        </Link>
+        <Link href="/contact" className="navLink">
+          Contact
+        </Link>
+      </div>
     </nav>
   )
 }
