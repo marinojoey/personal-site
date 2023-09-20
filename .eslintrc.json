@@ -9,6 +9,7 @@
   "rules": {
     "max-len": ["error", { "code": 100 }],
     "quotes": ["error", "single"],
+    "object-curly-newline": ["error", { "consistent": true }],
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
     "react/function-component-definition": "off",

@@ -11,24 +11,21 @@ const koulen = Koulen({ subsets: ['khmer'], style: 'normal', weight: '400' })
 const NavBar: FC<NavBarProps> = () => {
   return (
     <nav className={`${koulen.className} navbar`}>
-      <div className="linkGroup">
+      <div>
         <Link href="/resume" className="navLink">
           Resume
         </Link>
-        <Link href="/portfolio" className="navLink">
-          Portfolio
-        </Link>
+        <Link href="/portfolio">Portfolio</Link>
       </div>
-      <Link href="/" className="navLink mainTitle">
-        Joey Marino
+      <Link href="/" className="mainTitle">
+        <span className="shortTitle fullTitle">Joey</span>
+        <span className="fullTitle">&nbsp;Marino</span>
       </Link>
-      <div className="linkGroup">
+      <div>
         <Link href="/climbing" className="navLink">
           Climbing
         </Link>
-        <Link href="/contact" className="navLink">
-          Contact
-        </Link>
+        <Link href="/contact">Contact</Link>
       </div>
     </nav>
   )
