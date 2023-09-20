@@ -59,7 +59,11 @@ nav {
   .fullTitle {
     display: inline;
   }
+  .navbar, main {
+    max-width: 850px;
+  }
 }
+
 nav a, nav span {
   color: #FEF4D1;
 }
