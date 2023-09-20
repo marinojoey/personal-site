@@ -1,7 +1,8 @@
 import React, { FC } from 'react'
 import 'font-awesome/css/font-awesome.min.css'
 import Image from 'next/image'
-import MpIcon from '../assets/icons/MP_icon.png'
+import BlackMpIcon from '../assets/icons/MP_icon_black.png'
+import GreenMpIcon from '../assets/icons/MP_icon_green.png'
 
 interface FooterProps {
   className?: string
@@ -11,7 +12,7 @@ const icons = [
   {
     href: 'https://www.mountainproject.com/user/200180927/joey-marino',
     type: 'image',
-    src: MpIcon,
+    src: BlackMpIcon,
     alt: 'MP Icon',
     key: 'mp-icon',
   },
@@ -47,7 +48,24 @@ const Footer: FC<FooterProps> = ({ className }) => {
                 <i className={`${iconClass} icon`} />
               ) : (
                 <div className="icon">
-                  {src && <Image src={src} alt={alt} width={24} height={24} />}
+                  {src && (
+                    <span>
+                      <Image
+                        className="MpBlack"
+                        src={BlackMpIcon}
+                        alt={alt}
+                        width={24}
+                        height={24}
+                      />
+                      <Image
+                        className="MpGreen"
+                        src={GreenMpIcon}
+                        alt={alt}
+                        width={24}
+                        height={24}
+                      />
+                    </span>
+                  )}
                 </div>
               )}
             </a>

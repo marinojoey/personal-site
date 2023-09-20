@@ -138,3 +138,19 @@ main nav {
 .icon i {
   font-size: 24px;
 }
+
+.MpBlack, .MpGreen {
+  display: none;
+}
+
+span:hover .MpBlack {
+  display: none;
+}
+
+span:hover .MpGreen {
+  display: block;
+}
+
+span .MpBlack {
+  display: block;
+}
