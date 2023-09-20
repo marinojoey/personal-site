@@ -47,7 +47,7 @@ const Footer: FC<FooterProps> = ({ className }) => {
               {type === 'icon' ? (
                 <i className={`${iconClass} icon`} />
               ) : (
-                <div className="icon">
+                <div className="icon" style={{ marginRight: '7px' }}>
                   {src && (
                     <span>
                       <Image
