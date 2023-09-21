@@ -37,10 +37,11 @@ const icons = [
 ]
 
 const Footer: FC<FooterProps> = ({ className }) => {
+  const currentYear = new Date().getFullYear()
   return (
     <div className={`${className} footerContainer`}>
       <nav className="alignVertically footerNav navbar">
-        <span style={{ color: 'black', fontSize: 12 }}>© 2021 Joey Marino</span>
+        <span style={{ color: 'black', fontSize: 12 }}>© {currentYear} Joey Marino</span>
         <div className="iconContainer">
           {icons.map(({ href, type, iconClass, src, alt, key }) => (
             <a key={key} href={href}>
