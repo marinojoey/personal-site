@@ -64,26 +64,31 @@ nav, .mainWrapper {
   }
 }
 
-/* This will apply for either max-width 526px or max-height 641px or both */
-@media (max-width: 526px), (max-height: 641px) {
+@media (max-width: 223px), (max-height: 641px) {
   .scrollable-component {
     margin-bottom: calc(655px + 100vh); 
     overflow-y: hidden;
   }
 }
 
-/* This will apply for both conditions: max-width 847px and max-height 700px */
+/* 224px - 423px */
+@media (max-width: 423px), (max-height: 641px) {
+ .scrollable-component {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 847px) and (max-height: 700px) {
   .scrollable-component {
     margin-bottom: calc(655px + 100vh); 
     overflow-y: hidden;
-  }
-}
-
-/* This will apply for any screen larger than the specified sizes */
-@media (min-width: 848px) and (min-height: 701px) {
-  .scrollable-component {
-    /* Adapt styles for larger screens */
   }
 }
 

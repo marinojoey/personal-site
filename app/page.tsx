@@ -55,7 +55,7 @@ export default function Home() {
           }}
           alt="picture of Joey Marino"
         />
-        <HeroBackground />
+        <HeroBackground className="hero-background" />
       </div>
     </div>
   )
