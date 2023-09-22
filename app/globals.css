@@ -34,7 +34,7 @@ p > a {
 }
 
 /* nav styles */
-nav {
+nav, .mainWrapper {
   padding-bottom: 1rem;
   display: flex;
   align-items: center;
@@ -59,12 +59,12 @@ nav {
   .fullTitle {
     display: inline;
   }
-  .navbar, main {
+  .navbar, main, .mainWrapper {
     max-width: 850px;
   }
 }
 
-nav a, nav span {
+nav a nav span {
   color: #FEF4D1;
 }
 nav a:hover {
